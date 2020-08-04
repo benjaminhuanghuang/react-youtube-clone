@@ -20,3 +20,11 @@
   background-color: lightgray;
   cursor: pointer;
 }
+
+.sidebarRow:hover  > .sidebarRow__icon{
+  color: red;
+}
+
+.sidebarRow.selected{
+  background-color: lightgray;
+}

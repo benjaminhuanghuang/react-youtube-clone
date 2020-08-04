@@ -11,7 +11,7 @@ import "./Sidebar.css";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <SidebarRow title="Home" Icon={HomeIcon} />
+      <SidebarRow title="Home" Icon={HomeIcon} selected />
       <SidebarRow title="Treading" Icon={WhatshotIcon} />
       <SidebarRow title="Subscription" Icon={SubscriptionsIcon} />
     </div>
