@@ -25,4 +25,6 @@ Copy firebase config into firebase.js
   npm i @material-ui/core @material-ui/icons -s
 ```
 
+4. Header, Sidebar, RecommendedVideo, VideoCard
 
+5. React router
