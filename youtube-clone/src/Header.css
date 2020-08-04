@@ -8,23 +8,33 @@
 .header__logo {
   height: 25px;
   object-fit: contain;
-}
-.header_left{
-
+  margin-left: 10px;
 }
 
-.header_input{
+.header__icon {
+  margin-right: 5px;
+}
+
+.header__input{
   display: flex;
   align-items: center;
   width: 40%;
-  border: 1px solid black;
+  border: 1px solid lightgray;
 }
 
-.header_input> input {
+.header__input> input {
   flex:1;
-  border: 0;
+  border: none;
   outline: 0;
 }
+
+.header__innputButton {
+  width: 50px !important;    
+  background-color: #fafafa;
+  border-left: 1px solid lightgray;
+  color: gray; 
+}
+
 .header_right{
   display: flex;
   align-items: center;

@@ -20,6 +20,9 @@ Install firebase sdk
 ```
 Copy firebase config into firebase.js
 
-3. 
+3. Install material-ui
+```
+  npm i @material-ui/core @material-ui/icons -s
+```
 
 
