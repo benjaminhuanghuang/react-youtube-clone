@@ -1,9 +1,25 @@
 import React from "react";
 
+import VideoCard from "./VideoCard";
+
 import "./RecommendedVideos.css";
 
 function RecommendedVideos() {
-  return <div className="recommanedVideos"></div>;
+  return (
+    <div className="recommanedVideos">
+      <h2>Recommended</h2>
+      <div className="recommanedVideos__videos">
+        <VideoCard
+          title="title....."
+          views="2.3M"
+          timestamp="2days"
+          channel="test"
+          image="data:image/png;base64,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"
+          channelImage="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F3016%2F0*i1XbVjul86E_CSyf.jpg&imgrefurl=https%3A%2F%2Fmedium.com%2Fthat-conference%2Ftest-until-fear-turns-to-boredom-fac0793b847d&tbnid=d8BigfbA3M0-TM&vet=12ahUKEwihi6aL14DrAhUd_qwKHeb6BEcQMygEegUIARDPAQ..i&docid=DG-heoA9JCIICM&w=1508&h=706&q=test&ved=2ahUKEwihi6aL14DrAhUd_qwKHeb6BEcQMygEegUIARDPAQ"
+        />
+      </div>
+    </div>
+  );
 }
 
 export default RecommendedVideos;
